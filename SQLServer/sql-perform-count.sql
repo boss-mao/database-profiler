@@ -68,3 +68,17 @@ FROM    sys.procedures AS p
 WHERE   deps.Database_id = DB_ID()
 ORDER BY deps.total_logical_reads DESC;
 
+-- 查看某个SQL的执行计划
+SET STATISTICS PROFILE ON 
+SELECT * FROM Demo
+SET STATISTICS PROFILE OFF
+
+-- 查询某个SQL的执行时间
+SET STATISTICS Time ON 
+SELECT * FROM Demo
+SET STATISTICS TIME OFF
+
+-- 查询某个SQL的IO信息
+SET STATISTICS IO ON 
+SELECT * FROM Demo
+SET STATISTICS IO OFF
