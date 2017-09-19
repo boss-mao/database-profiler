@@ -4,7 +4,7 @@
 - index.sql 索引监控
 - environment.sql 数据库环境监控
 - sql-perform-count.sql sql执行次数和性能监控
-
+- who_is_active_v11_17.sql 开源监控脚本，监控数据库锁定情况，地址：http://whoisactive.com/
 ***
 
 ## MySQL文件夹：对MySQL进行性能优化时用到的SQL和操作
