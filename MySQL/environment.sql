@@ -7,7 +7,7 @@ SHOW STATUS
 
 --查看所表参数信息
 SHOW  TABLE STATUS
---查看连接信息
+--查看连接信息以及连接执行的命令
 SHOW  PROCESSLIST
 
 --开启会话级别的profile
