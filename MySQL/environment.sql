@@ -11,7 +11,6 @@ SHOW PROFILES
 --查询单条语句profile
 SHOW PROFILE FOR QUERY 1
 
-
 --查看整个数据库服务的线程数
 show global status like 'Thread%';
 --刷新会话级别的计数器
@@ -21,4 +20,7 @@ SHOW STATUS
 
 --查看所表参数信息
 SHOW  TABLE STATUS
+
+--查询持续时间大于一秒的事务
+SELECT * FROM information_schema.innodb_trx WHERE TIME_TO_SEC(timediff(now(), trx_started)) > 1
 
